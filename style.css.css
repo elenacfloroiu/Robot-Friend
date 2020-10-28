@@ -1,0 +1,100 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.robots {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: pink;
+}
+
+.head { 
+	width: 210px; 
+	margin: 0 auto; 
+	height: 150px;
+	border-radius:200px 200px 0 0 ; 
+	margin-bottom: 10px; 
+	transition: 1s ease-in-out; 
+} 
+
+.head:hover{
+	width: 250px;
+	transform: scale(1.1);
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color:white;  
+	position: relative;
+} 
+
+.left_eye{ 
+	top: 100px; 
+	left: 40px; 
+}
+
+.right_eye{
+	top: 80px; 
+	left: 130px; 
+}
+
+.upper_body{
+	display: flex;
+	justify-content: center;
+}
+
+.torso{
+	width: 210px;
+	height: 200px;
+	border-radius: 0 0 80px 80px;
+}
+
+.left_arm, .right_arm{
+	width: 30px;
+	height: 100px;
+	margin: 5px;
+	border-radius: 20px;
+	transition: all 1s;
+}
+
+.left_arm:hover{
+	transform: rotate(30deg);;
+}
+
+.right_arm:hover{
+	transform: rotate(-30deg);;
+}
+
+.left_leg, .right_leg{
+	width: 30px;
+	height: 70px;
+	border-radius: 0 0 20px 20px;
+	position: fixed;
+}
+
+.left_leg{
+	left: 795px;
+	top: 425px;
+}
+
+.right_leg{
+	left: 710px;
+	top: 425px;
+}
+
+.right_leg:hover{
+	transform: rotate(30deg);;
+}
+
